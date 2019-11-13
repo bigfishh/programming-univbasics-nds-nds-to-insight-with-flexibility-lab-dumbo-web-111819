@@ -80,12 +80,12 @@ def gross_per_studio(collection)
   
   while mov_row < collection.length do 
    
-    mov_name = collection[mov_row]
+    mov = collection[mov_row]
     
-    if !total[mov_name[:studio]]
-      total[mov_name[:studio]] = mov_name[:worldwide_gross]
+    if !total[mov[:studio]]
+      total[mov[:studio]] = mov[:worldwide_gross]
     else 
-      total[mov_name[:studio]] += mov_name[:worldwide_gross]
+      total[mov[:studio]] += mov[:worldwide_gross]
     end
     
     mov_row += 1
