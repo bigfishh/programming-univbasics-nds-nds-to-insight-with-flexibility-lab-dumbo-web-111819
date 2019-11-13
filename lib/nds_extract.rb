@@ -89,7 +89,7 @@ def gross_per_studio(collection)
     end
     
     mov_row += 1
-  binding.pry
+    
   end
  
   total
