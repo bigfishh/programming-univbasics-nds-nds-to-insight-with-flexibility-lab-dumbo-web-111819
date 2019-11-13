@@ -87,6 +87,14 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
+  aoa = []
+  dir_row = 0 
+  while dir_row < source.length do 
+    dir_name = source[dir_row][:name]
+    aoa << movies_with_director_key(dir_name, source)
+    dir_row += 1 
+  end 
+  aoa
 end
 
 # ----------------    End of Your Code Region --------------------
