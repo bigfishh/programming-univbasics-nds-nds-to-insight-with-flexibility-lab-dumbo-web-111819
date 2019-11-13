@@ -77,9 +77,7 @@ def gross_per_studio(collection)
   total = {}
   dir_row = 0 
   while dir_row < collection.length do 
-    dir_name = collection[dir_row][:name]
-    dir_movies = movies_with_directors_set(collection)
-    movie_index = 0 
+    dir_name = collection[dir_row][:studio]
 end
 
 def movies_with_directors_set(source)
