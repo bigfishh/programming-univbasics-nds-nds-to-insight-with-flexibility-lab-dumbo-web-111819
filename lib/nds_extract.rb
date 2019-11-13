@@ -78,7 +78,7 @@ def gross_per_studio(collection)
   mov_row = 0 
   while dir_row < collection.length do 
     studio_name = collection[mov_row][:studio]
-    if studio_name 
+    if studio_name = 
 end
 
 def movies_with_directors_set(source)
