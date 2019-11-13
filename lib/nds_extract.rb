@@ -111,7 +111,8 @@ def movies_with_directors_set(source)
   dir_row = 0 
   while dir_row < source.length do 
     dir_name = source[dir_row][:name]
-    aoa << movies_with_director_key(dir_name, source)
+    dir_mov = source[dir_row][:movies]
+    aoa << movies_with_director_key(dir_name, dir_mov)
     dir_row += 1 
   end 
   aoa
